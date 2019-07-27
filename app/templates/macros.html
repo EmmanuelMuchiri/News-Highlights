@@ -1,0 +1,15 @@
+{% macro displayNewsList(news_list) %}
+
+{% for news in news_list %}
+<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">    
+    <li class="text-center">
+        <a href="/news/{{news.id}}">
+            {{ news.title|truncate(10)}}</a>
+            <h4>{{news.name}}</h4>
+        <a href="{{news.url}}">click Here To Read</a>
+    </li>
+</div>
+
+{% endfor %}
+
+{% endmacro %}
