@@ -10,22 +10,8 @@
 
 <!-- Content block -->
 {% block content %}
-<div class="container jumbotron">
-<!-- General News -->
-<!-- <div class="navbar navbar-light" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav" style="padding-left:30%">
-                <li><a href="#general">General</a></li>
-                <li><a href="#business">Business</a></li>
-                <li><a href="#sport">Sports</a></li>
-                <li><a href="#entertainment">Entertainment</a></li>
-                <li><a href="#technology">Technology</a></li>
-            </ul>
-        </div>
-    </div>
-</div> -->
-<div class="container">
+<div class=" jumbotron">
+<div class="">
     <div class="page_name"> 
         <h1>Prolific News Highlights</h1> 
     </div>
@@ -72,7 +58,7 @@
     <!-- Health Sources section  -->
     <hr />
     <div class="source_section">
-        <h3 id="science" class="source_section_name">Health News</h3>
+        <h3 id="health" class="source_section_name">Health News</h3>
         <ul>
             <div class="row">
                {{ macro.displayNewsList(health) }}
@@ -82,7 +68,7 @@
     <!-- Sports Sources section  -->
     <hr />
     <div class="source_section">
-        <h3 id="sport" class="source_section_name">Sports News</h3>
+        <h3 id="sports" class="source_section_name">Sports News</h3>
         <ul>
             <div class="row">
                {{ macro.displayNewsList(sports) }}
