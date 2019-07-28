@@ -35,4 +35,4 @@ def source(id):
     source = get_news_source(id)
     title = f'{source.title}'
     articles = news_Article.get_articles(source.id)
-    return render_template('movie.html',  title = title, source = source, articles = articles)
+    return render_template('news_source.html',  title = title, source = source, articles = articles)
