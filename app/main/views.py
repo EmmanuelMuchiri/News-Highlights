@@ -1,5 +1,5 @@
 from flask import render_template,request,redirect,url_for  
-from ..request import get_news_sources
+from ..request import get_news_sources,get_news_source
 from ..models import news_Article
 from . import main
 
@@ -27,12 +27,15 @@ def index():
     else:
         return render_template('index.html',title = title,general = general ,business = business, technology = technology,health=health,science=science,sports=sports)
 
-@main.route('/source/<int:id>')
+@main.route('/source/<id>')
 def source(id):
     '''
     View root page function theat returns the index pages and its  data 
     '''
     source = get_news_source(id)
-    title = f'{source.title}'
-    articles = news_Article.get_articles(source.id)
-    return render_template('news_source.html',  title = title, source = source, articles = articles)
+    newsid = id.capitalize()
+    title = f'{newsid}'
+    details = id.capitalize()
+    content = f'{details}'
+    # articles = news_source.get_news_source(source.id)
+    return render_template('news_source.html',  title = title, id = newsid ,source = source ,content = content)
