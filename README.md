@@ -2,7 +2,7 @@
 
 ## Built By [Emmanuel Muchiri](https://github.com/emmanuelmuchiri/)
 
-##Screenshots
+## Screenshots
 ![homepage](app/static/images/news.png);
 
 ## Description
